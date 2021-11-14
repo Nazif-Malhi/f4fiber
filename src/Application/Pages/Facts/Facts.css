@@ -1,0 +1,65 @@
+.counter-up{
+    background: url('../../Components/Images/cloud-storage-banner-background.jpg') no-repeat;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.count{
+    font-size: 50px;
+    
+}
+.counter-up::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.8);
+}
+
+.counter-up .contenti{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+.contenti .box {
+    width: calc(25% - 30px);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: column;
+}
+
+.contenti .box .counter{
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+@media (max-width:1036px) {
+
+    .counter-up{
+        padding: 50px 50px 0 50px;
+    }
+    .contenti .box{
+        width: calc(50% -30px);
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:580px){
+    .contenti .box{
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+.footerContainer{
+    background: hsl(211, 17%, 24%);
+    
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+}
+.columnfooter {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 210px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .rowfooter:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .columnfooter p{
+   margin-top: 20px;
+   margin-left: 20px;
+  }
+
+  .columnfooter hr{
+      margin-left: 37%;
+      margin-top: 10px;
+  }

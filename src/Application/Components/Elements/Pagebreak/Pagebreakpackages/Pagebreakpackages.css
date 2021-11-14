@@ -1,0 +1,44 @@
+
+  /* Create two equal columns that floats next to each other */
+  .columnpackages1 {
+    float: left;
+    width: 50%;
+      padding-top: 10px;  
+    height: 20vh; /* Should be removed. Only for demonstration */
+    font-size: xx-large;
+    background-color: white;
+    color: black;
+  }
+  
+  .columnpackages2 {
+       padding-top: 10px; 
+      font-size: xx-large;
+      height: 20vh;
+      background-color: #2C3640;
+      color: white;
+
+  }
+  .columnpackages1 h2{
+      float: right;
+      margin-right: 4px;
+      margin-top: 3vh;
+  }
+  
+  .columnpackages2 h2{
+      margin-top: 3vh;
+      margin-left: calc(50% + 2px);
+}
+
+  /* Clear floats after the columns */
+  .rowpackages:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .columnpackages1,.columnpackages2 {
+      width: 100%;
+    }
+  } */

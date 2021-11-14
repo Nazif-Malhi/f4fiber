@@ -1,0 +1,98 @@
+._ofNav{
+    background: #2C3640;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 99;
+}
+
+.logo_ofNav{
+ font-size: 25px;
+ font-weight: 600;
+ font-style: italic;
+ color: white;
+}
+
+.menue-list_ofNav{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.menue-list_ofNav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    padding: 5px 10px;
+    
+}
+
+
+.menue-list_ofNav li a:hover{
+    background-color: #0086FF;
+    border-radius: 2px;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .logo_ofNav{
+        font-size: 20px;
+
+    }
+
+    .menue-list_ofNav li a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .menu-icon{
+        display: block;
+        position: absolute;
+        margin-left: 90%;
+    }
+    .menue-list_ofNav{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        right: 0;
+        top: 64px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menue-list_ofNav li {
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+
+    }
+    .menue-list_ofNav li a{
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    .bars{
+        cursor: pointer;
+       
+    }
+    .timer{
+        cursor: pointer;
+    }
+    
+    .menue-list_ofNav.close{
+        right: -100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+}

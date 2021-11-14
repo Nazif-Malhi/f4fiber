@@ -1,0 +1,42 @@
+
+  /* Create two equal columns that floats next to each other */
+  .column1p {
+    float: left;
+    width: 50%;
+      padding-top: 10px;  
+    height: 10vh; /* Should be removed. Only for demonstration */
+    font-size: xx-large;
+    background-color: white;
+    color: black;
+  }
+  
+  .column2p {
+       padding-top: 10px; 
+      font-size: xx-large;
+      height: 10vh;
+      background-color: #2C3640;
+      color: white;
+
+  }
+  .column1p h2{
+      float: right;
+      margin-top: 12vh;
+  }
+  
+  .column2p h2{
+      margin-top: 12vh;
+}
+
+  /* Clear floats after the columns */
+  .rowp:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .column1p,.column2p {
+      width: 100%;
+    }
+  } */
