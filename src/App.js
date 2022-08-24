@@ -8,8 +8,8 @@ import PageBreakblank from './Application/Components/Elements/Pagebreak/PageBrea
 import Facts from './Application/Pages/Facts/Facts';
 import PageBreakchoose from './Application/Components/Elements/Pagebreak/PageBreakchoose/PageBreakchoose';
 import GoogleMap from './Application/Pages/GoogleMap/GoogleMap';
-import Providers from './Application/Pages/Providers/Providers';
 import Footer from './Application/Pages/Footer/Footer';
+import ContactUs from './Application/Pages/ContactUs/ContactUs';
 
 
 
@@ -25,7 +25,7 @@ function App() {
     <Facts/>
     <Pagebreakareacover/>
     <GoogleMap/>
-    <Providers/>
+    <ContactUs/>
     <Footer/>
     </>
   );

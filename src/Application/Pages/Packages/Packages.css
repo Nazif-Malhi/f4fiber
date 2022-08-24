@@ -1,5 +1,10 @@
+
 section{
     align-items: center;
+}
+.PackagesBac{
+    background-color: #0086FF;
+    height: 320px;
 }
  /* galaxy animation */
  .galaxy-header {

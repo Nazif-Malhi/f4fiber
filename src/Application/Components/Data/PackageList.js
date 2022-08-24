@@ -7,33 +7,23 @@ import ImageFive from '../Images/venus.jpg'
 
 export const PackageList=[
   {
-      title: 'Mars',
-      Range: '800 RS/ only',
-      image: ImageOne
+      title: 'Broadband 10mb',
+      Range: '+ TV',
   },
   {
-      title: 'Jupiter',
-      Range: '1000 RS/ only',
-      image: ImageTwo
+      title: 'Broadband 20mb',
+      Range: '+ TV',
   },
   {
-      title: 'Pluto',
-      Range: '1200 RS/ only',
-      image: ImageThree
+      title: 'Broadband 30mb',
+      Range: '+ TV',
   },
   {
-      title: 'Satrun',
-      Range: '1500 RS/ only',
-      image: ImageFour
+      title: 'Broadband 35mb',
+      Range: '+ TV',
   },
   {
-      title: 'Venus',
-      Range: '1800 RS/ only',
-      image: ImageFive
-  },
-  {
-      title: 'Venus',
-      Range: '2000 RS/ only',
-      image: ImageThree
+      title: 'Broadband 50mb',
+      Range: '+ TV',
   }
 ]

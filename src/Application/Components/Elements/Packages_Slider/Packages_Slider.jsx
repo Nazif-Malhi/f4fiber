@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {PackageList} from "../../Data/PackageList.js";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// import { Button } from "../../Components/Button.js";
 import './Packages_Slider.css'
 
 
@@ -14,6 +13,10 @@ const CardWrapper =styled.div`
 padding-top: 20%;
 padding-left: 20%;
 z-index:100;
+align-items:center;
+justify-content:center;
+display:flex;
+text-align:center;
 `;
 const ButtonWrapper=styled.div`
     padding-left: 30px;
@@ -61,10 +64,10 @@ const Packages_Slider = () => {
                 {PackageList.map((items,index) => (
                     <CardWrapper id='slider' >
                         <div className = "card" style={{width: '15rem'}}>
-                            <img src = {items.image} className="card-img-top" alt="..." height="200px"/>
+                            {/* <img src = {items.image} className="card-img-top" alt="..." height="200px"/> */}
                                 <div className = "card-body">
-                                    <h5 className  = "card-title">{items.title}</h5>
-                                        <p className   = "card-text">{items.Range}</p>
+                                    <h3 className  = "card-title">{items.title}</h3>
+                                        <h5 className   = "card-text">{items.Range}</h5>
                                     <ButtonWrapper>
                                     {/* <Button primary = 'true' >Check Menue</Button> */}
                                     </ButtonWrapper>

@@ -4,12 +4,12 @@ import './Packages.css'
 const Packages = () => {
     return (
         <>
-        <section id="/package">
-            <div class="galaxy">
+        <section id="/package" className='PackagesBac'>
+            {/* <div class="galaxy"> */}
                 <Packages_Slider/>
-                <div class="stars">
-                </div>
-            </div>
+                {/* <div class="stars"> */}
+                {/* </div> */}
+            {/* </div> */}
        </section>
        </>
     )
