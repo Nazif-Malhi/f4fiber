@@ -1,8 +1,0 @@
-.mapContainer{
-    background: url('../../Components/Images/Capture.PNG');
-    height: 60vh;
-    display:flex;
-    align-items: center;
-    background-attachment: fixed;
-    position: relative;
-}
